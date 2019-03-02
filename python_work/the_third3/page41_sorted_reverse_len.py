@@ -56,8 +56,86 @@ print("I have invited "+str(len(dinner_list))+" person to my dinner this weekend
 #3-10尝试使用各个函数：想想可储存到列表中的东西，如山岳，河流，国家，城市，语言或你喜欢的任何东西。编写一个程序，在其中
 #创建一个包含这些元素的列表，然后对于本章介绍的每个函数，都至少使用一次来处理这个列表。
 
+favorite=['sancy','making money','body building','games','python','english','the unite states','california','virginia','beauty','honor','thailand','swiss','sexuality']
+print("\n3-10尝试使用各个函数：想想可储存到列表中的东西，如山岳，河流，国家，城市，语言或你喜欢的任何东西。编写一个程序，在其中"
+          "创建一个包含这些元素的列表，然后对于本章介绍的每个函数，都至少使用一次来处理这个列表。如下：")
+print("\n1.访问列表：")
+print(favorite)
+print(favorite[0])
+print(favorite[-1])
+print(favorite[2].title())
+print(favorite[1].upper())
+
+print("\n2.使用列表中的各个值：")
+message=("My favorite is "+favorite[1].title()+"!")
+print(message)
+
+print("\n3.修改列表元素：")
+favorite[3]="War games"
+print(favorite)
+
+print("\n4.在列表中添加元素：")
+print("（1）在末尾添加元素：")
+favorite.append("movie")
+print(favorite)
+
+print("\n（2）空列表内添加元素：")
+favorite_test=[]
+print(favorite_test)
+favorite_test.append("making money")
+favorite_test.append("GYM")
+favorite_test.append("sexuality")
+print(favorite_test)
+
+print("\n5.在列表中插入元素：")
+print(favorite)
+favorite.insert(2,"health")
+print(favorite)
+
+print("\n6.在列表中删除元素：\n(1)DEL删除后无法再访问")
+print(favorite)
+del favorite[4]
+print(favorite)
+
+print("\n（2）pop()删除末尾，可再访问删除元素：")
+print(favorite)
+favorite_pop=favorite.pop()
+print(favorite)
+print("I'd like to watch the "+favorite_pop+"!")
 
 
+print("\n（3）pop()赋索引后删除任意元素，可再访问删除元素：")
+print(favorite)
+favorite_pop2=favorite.pop(-2)
+print(favorite)
+
+print("\n7.（1）remove根据目标值删除元素：")
+print(favorite)
+favorite.remove("virginia")
+print(favorite)
+
+print("\n7.（2）remove储存在变量后删除元素：")
+too_faraway="california"
+favorite.remove(too_faraway)
+print("I'd like to travel to the "+too_faraway+" but it still not yet!")
+
+print("\n8.sort对列表永久排序以及永久反向排序")
+print(favorite)
+favorite.sort()
+print(favorite)
+favorite.sort(reverse=True)
+print(favorite)
+
+print("\n9.sorted对列表临时排序以及临时反向排序")
+print(favorite)
+print(sorted(favorite))
+print(sorted(favorite,reverse=True))
+print(sorted(favorite))
+
+print("\n9.确定列表长度：")
+print(favorite)
+print(len(favorite))
+print("My favorite in this list have "+str(len(favorite))+" kind!")
 
 
 
