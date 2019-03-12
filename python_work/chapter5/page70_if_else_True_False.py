@@ -121,3 +121,5 @@ if name in names:
 else:
     print("Well," + name.title() + ", U can use this name!")
 
+#第5章第70页练习题
+
