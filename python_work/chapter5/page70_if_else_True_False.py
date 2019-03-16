@@ -11,7 +11,7 @@ print(car == 'audi')
 print("\n----------------------------------------------------------------------------------------------------------------")
 food='chicken'
 print("Is food == 'chicken'? I predict True.")
-print(food=='chicken')
+print(food == 'chicken')
 
 print("\nIs food == 'rice'? I predict False.")
 print(food == 'rice')

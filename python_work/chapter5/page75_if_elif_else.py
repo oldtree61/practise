@@ -102,6 +102,7 @@ elif age >= 65:
 print("\n最喜欢的水果：")
 favorite_fruits=["litchi","watermelon","banana","pear"]
 
+
 if "litchi" in favorite_fruits:
     print("yes,litchi")
 if "watermelon" in favorite_fruits:
@@ -113,4 +114,23 @@ if "pear" in favorite_fruits:
 if "apple" in favorite_fruits:
     print("YES,APPLE")
 print("You really like bananas!")
+
+
+print("\n使用if语句处理列表：")
+favorite_fruits=["litchi","watermelon","banana","pear"]
+for fruit in favorite_fruits:
+    print("I like "+fruit+".")
+print("All of this fruit are my favorite!")
+
+#如果冬天没有西瓜
+print("\n如果冬天缺少西瓜：")
+favorite_fruits=["litchi","watermelon","banana","pear"]
+for fruit in favorite_fruits:
+    if fruit == "watermelon":
+       print("Oh,I can't eat "+fruit+" in winter.")
+    else:
+       print("I can eat "+fruit+" in winter.")
+print("All of this fruit are my favorite!")
+
+
 
