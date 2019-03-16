@@ -49,3 +49,5 @@ print("\nstring:\n"+words_dictionary['string'])
 print("\nvariable:\n"+words_dictionary['variable'])
 print("\nprint:\n"+words_dictionary['print'])
 print("\ninterge:\n"+words_dictionary['interge'])
+
+
