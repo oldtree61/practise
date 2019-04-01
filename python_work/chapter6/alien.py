@@ -77,3 +77,75 @@ favorite_languages = {'sancy':'python',
 print("Oldtree favorite language is "+
       favorite_languages['oldtree']+
       ".")
+
+
+#6.4嵌套
+print("\n\n6.4嵌套")
+#6.4.1字典列表：
+print("\n6.4.1字典列表")
+alien_0 = {'color':'green','points':5}
+alien_1 = {'color':'yellow','points':10}
+alien_2 = {'color':'red','points':15}
+
+aliens = [alien_0,alien_1,alien_2]
+for alien in aliens:
+    print(alien)
+
+#使用range（）自动生成外星人，床架一个用于存储外星人的空列表
+print("\n使用range（）自动生成外星人，创建一个用于存储外星人的空列表：")
+
+aliens = []
+
+for alien_number in range(30):    #创建30个绿色的外星人
+    new_alien = {'color':'green', 'points':5, 'speed':'slow'}
+    aliens.append(new_alien)
+
+for alien in aliens[:5]: #显示前5个外星人,使用了一个切片来打印前5个外星人
+    print(alien)
+print("...")
+
+print("Total number of aliens:" + str(len(aliens))) #显示创建了多少个外星人
+print(len(aliens))
+
+#要将前三个外星人修改成为黄色、速度为中等且值10个点，你可以这样做：
+#创建一个用于存储外星人的空列表
+#创建30个绿色的外星人
+#将前3个外星人改成黄色，速度为中且值10个点
+#显示前5个外星人
+print("\n#要将前三个外星人修改成为黄色、速度为中等且值10个点，你可以这样做：")
+
+aliens = []
+for alien_number in range(0,30):  #@@@@@注意这里是in range，不是in aliens,因为要用range()函数来创建数量为30个的外星人！
+    new_alien = {'color':'green', 'points':5, 'speed':'slow'}
+    aliens.append(new_alien)
+
+for alien in aliens[0:3]:
+    if alien['color'] == 'green':
+        alien['color'] = 'yellow'
+        alien['points'] = 10
+        alien['speed'] = 'medium'
+for alien in aliens:
+        print(alien)
+
+print("\n")
+for alien in aliens:
+    if alien['color']  =='yellow':
+       alien['color'] ='red'
+       alien['points'] = 15
+       alien['speed'] = 'fast'
+
+    print(alien)
+
+print(".....")
+
+
+
+aliens = []
+
+for new_alien in range(30):    #创建30个绿色的外星人
+    new_alien = {'color':'green', 'points':5, 'speed':'slow'}
+    aliens.append(new_alien)
+
+for alien in aliens[:5]: #显示前5个外星人,使用了一个切片来打印前5个外星人
+    print(alien)
+print("...")
